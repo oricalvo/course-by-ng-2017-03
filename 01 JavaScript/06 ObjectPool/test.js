@@ -1,6 +1,10 @@
+//var createObjectPool = require("./objectPool").createObjectPool;
+
 var pool = createObjectPool();
 
-var ori = {};
+var ori = {
+    name: "Ori"
+};
 
 pool.add(ori);
 pool.add(ori);
@@ -11,4 +15,3 @@ console.log(res == ori);
 
 res = pool.get();
 console.log(res == null);
-
