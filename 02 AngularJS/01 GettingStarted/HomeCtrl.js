@@ -20,6 +20,12 @@
             $scope.contacts.push(contact);
         }
 
+        $scope.remove = function(contact, index) {
+            if(confirm("Delete contact " + contact.name + " ?")) {
+                $scope.contacts.splice(index, 1);
+            }
+        }
+
     }
 
     appModule.controller("HomeCtrl", HomeCtrl);
