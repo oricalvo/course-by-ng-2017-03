@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="app-content">
+        <div class="board" ng-controller="BoardCtrl">
+            <div class="row" ng-repeat="row in rows">
+                <div class="cell"
+                     ng-repeat="cell in row"
+                     ng-click="cellClicked(cell)"
+                     ng-class="{'cell-nonempty': !!cell.val}">
+                    {{cell.val}}
+                </div>
+            </div>
+
+            <button ng-click="start()">Start</button>
+        </div>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="BoardCtrl.js"></script>
+</body>
+</html>
