@@ -1,0 +1,21 @@
+{
+  "name": "how-to-write-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Point.js",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "shelljs": "^0.7.7"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "open": "0.0.5",
+    "shelljs": "^0.7.7"
+  },
+  "scripts": {
+    "start": "node dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
