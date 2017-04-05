@@ -1,0 +1,32 @@
+my-app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+my-app .content {
+    display:flex;
+    flex-direction: row;
+    padding: 1em;
+    height: 100%;
+}
+
+my-app .content my-contact-list {
+    width: 50%;
+}
+
+my-app .content my-contact-details {
+    width: 50%;
+}
+
+my-app .header {
+    font-size: 2em;
+    background-color: black;
+    color: white
+}
+
+my-app .footer {
+    background-color: black;
+    color: white
+}
+
