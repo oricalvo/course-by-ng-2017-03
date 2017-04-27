@@ -1,0 +1,9 @@
+<h1>Hello Angular</h1>
+
+<my-contact-list contacts="$ctrl.contacts"
+                 on-selection-changed="$ctrl.onContactSelected($event)"></my-contact-list>
+
+<div>
+    <input ng-model="$ctrl.name">
+    <button ng-click="$ctrl.add()">Add</button>
+</div>
