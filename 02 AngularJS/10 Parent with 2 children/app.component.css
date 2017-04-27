@@ -1,0 +1,29 @@
+my-root {
+    display: block;
+}
+
+my-root .header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+}
+
+my-root .header .logo {
+    font-size: 1.5em;
+}
+
+my-root .header my-clock {
+}
+
+my-root ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+
+my-root ul li:hover {
+    background-color: lightblue;
+}
+

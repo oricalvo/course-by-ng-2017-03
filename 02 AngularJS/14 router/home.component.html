@@ -1,0 +1,10 @@
+<h1>Home</h1>
+
+<div>{{$ctrl.counter}}</div>
+<button ng-click="$ctrl.inc()">Inc</button>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts" ng-click="$ctrl.gotoContactDetails(contact)">
+        <span>{{contact.name}}</span>
+    </li>
+</ul>
